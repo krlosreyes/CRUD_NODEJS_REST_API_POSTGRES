@@ -1,0 +1,11 @@
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: charlie
+      POSTGRES_PASSWORD: 081419
+      POSTGRES_DB: rest_api_2024
+    ports:
+      - 5432:5432
